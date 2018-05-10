@@ -11,7 +11,7 @@
 [Demo](https://tianqi.name/jekyll-TeXt-theme/) | [English](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/README-en.md)
 
 TeXt is a succinct theme for blogging.
-
+!
 TeXt 是针对博客的一款简洁的主题，它虽然简洁但并不简单。它参考了 iOS 11 的风格，有大而突出的标题和圆润的按钮及卡片。
 
 ## Features

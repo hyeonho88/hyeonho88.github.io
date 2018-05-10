@@ -8,11 +8,7 @@ titles:
 key: page-about
 ---
 
-Welcome to my blog! :earth_asia: :earth_africa: :earth_americas:
-
-{% highlight javascript %}
-(() => console.log('hello, world!'))();
-{% endhighlight %}
+Hello, Welcome my Blog, 
 
 ## Skills
 

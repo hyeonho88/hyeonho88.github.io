@@ -1,18 +1,23 @@
 ---
 layout: page
 titles:
-  en: About
+  en: Shhoya_About
   zh: 关于
   zh-Hans: 关于
   zh-Hant: 關於
+  ko: 나는!
 key: page-about
 ---
 
-Hello, Welcome my Blog, 
+Name : Shhoya
+
+Team : Cyberone PT team
+
+
 
 ## Skills
 
-- HTML5, CSS3(SASS), JavaScript(ES2017, Node.js), Bash(Zsh)
-- React, React Native, Vue.js
-- gulp, webpack
-- Adobe Photoshop, Sketch
+- Web, Mobile App Hacking
+- Reverse Code Engineering
+- Machine Learning
+- Malware Analyze

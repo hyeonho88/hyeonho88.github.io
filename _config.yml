@@ -1,167 +1,61 @@
+# Developer's Note: This is a sample _config.yml file offered with
+# jekyll-theme-prologue for your convenience. To use it, move it to your
+# project's root directory. Please note that the following lines are
+# NECESSARY for Prologue to work correctly:
+#
+# theme: jekyll-theme-prologue
+# collections: [sections]
+#
+# They activate the theme and tell Jekyll to find your homepage content
+# in /_sections. Note where "sections" starts with an underscore
+# and where it doesn't. The social settings will make links to
+# Twitter, etc., but only if you give the URL.
+#
+# Also, be sure to customize url and baseurl for your site.
+#
+# ---------------------------------------------------------------
+#
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
 #
-# ,--------.      ,--.   ,--. ,--.
-# '--.  .--',---.  \  `.'  /,-'  '-.
-#    |  |  | .-. :  .'    \ '-.  .-'
-#    |  |  \   --. /  .'.  \  |  |
-#    `--'   `----''--'   '--' `--'
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+subtitle: Your awesome subtitle
+description: >- # this means to ignore newlines until "baseurl:"
+  This is the demo site for a Jekyll theme version of
+  HTML5 UP's sleek, responsive site template Prologue.
+author: Your Incredible Name
+email: your-email@example.com
+avatar: assets/images/avatar.jpg
 
+# You'll want to customize url and baseurl for your own site:
+baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
+# Social settings
+facebook_url:
+github_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url:
 
-## => Site Settings
-##############################
-text_color_theme: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-url: # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl: # does not include hostname
-title: Shhoya' Blog
-description: > # this means to ignore newlines until "Language & timezone"
-  Someone's Blog
+# Google Analytics Tracking ID goes here:
+google_analytics:
 
-
-## => Language and Timezone
-##############################
-lang: # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
-
-
-## => Author and Social
-##############################
-author:
-  name: Shhoya
-  email: hunho88@naver.com 
-  facebook: # your Facebook username
-  twitter: # your Twitter username
-  github: # your GitHub username
-  linkedin: # your Linkedin username
-  googleplus: # your Google+ username
-  weibo: # your Weibo username
-  douban: # your Douban username
-
-
-## => GitHub Repository (if the site is hosted by GitHub)
-##############################
-repository: https://github.com/hyeonho88
-repository_tree: master
-
-
-## => Navigation
-##############################
-paths:
-  base: /
-  home: /
-  all:  /all.html
-  rss:  /feed.xml
-
-nav_lists:
-  - titles:
-      en: About
-      zh: 关于
-      zh-Hans: 关于
-      zh-Hant: 關於
-    url: /about.html
-
-
-## => Post
-##############################
-## excerpt
-excerpt_separator: <!--more-->
-excerpt_type: html # text (default), html
-
-## TOC
-toc:
-  selectors: # "h1,h2,h3" (default)
-
-## Markdown Enhancements
-
-# Mathjax
-mathjax: # false (default), true
-mathjax_autoNumber: # false (default), true
-
-# Mermaid
-mermaid: # false (default), true
-
-# Chart
-chart: # false (default), true
-
-
-## => Paginate
-##############################
-paginate: 8
-paginate_path: /blog/page:num # don't change this unless for special need
-
-
-## => Sources
-##############################
-sources: # bootcdn (default), unpkg
-
-
-## => Comments
-##############################
-## Disqus
-disqus:
-  shortname: # the Disqus shortname for the site
-
-## Gitalk
-# please refer to https://github.com/gitalk/gitalk for more info.
-gitalk:
-  clientID: # GitHub Application Client ID
-  clientSecret: # GitHub Application Client Secret
-  repository: # GitHub repo
-  owner: # GitHub repo owner
-  admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-    # - your GitHub Id
-
-
-## => Pageview
-##############################
-## Leancloud
-leancloud:
-  app_id: # LeanCloud App id
-  app_key: # LeanCloud App key
-  app_class: # LeanCloud App class
-
-
-## => Analytics
-##############################
-## Google Analytics
-ga_tracking_id: # Google Analytics id for the site
-
-
-## => Build
-##############################
-markdown: kramdown
-highlighter: rouge
-permalink: date
-
-exclude:
-  - CHANGELOG.md
-  - CHECKLIST.md
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README-*.md
-  - README.md
-  - gulpfile.js
-  - jekyll-text-theme.gemspec
-  - package-lock.json
-  - package.json
-  - /docs
-  - /node_modules
-  - /screenshots
-  - /test
-  - /vendor
-
-
-## => Plugins
-##############################
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jemoji
+# The following settings are NECESSARY for the Prologue theme to run:
+theme: jekyll-theme-prologue
+collections: [sections]

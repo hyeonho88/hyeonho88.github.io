@@ -9,7 +9,7 @@ layout: default
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
 	<!-- Posts List -->
-	{%- for _post in _posts -%}
+	{%- for _post in paginator._posts -%}
 		{%- capture _title -%}
 			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
 		{%- endcapture -%}
@@ -22,4 +22,21 @@ layout: default
 		{%- assign _content = _excerpt | append: _link -%}
 		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
 	{%- endfor -%}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="https://shhoya.github.io/page{{paginator.next_page}}">이전(Previous)</a>
+  {% else %}
+    <span class="pagination-item older">이전(Previous)</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="https://hyeonho88.github.io/blog.html">다음(Next)</a>
+    {% else %}
+      <a class="pagination-item newer" href="https://hyeonho88.github.io/page{{paginator.previous_page}}">다음(Next)</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">다음(Next)</span>
+  {% endif %}
 </div>
